@@ -9,7 +9,7 @@
 .contenedor{
     display: grid;
     grid-template-columns: 500px 1fr 1fr;
-    grid-template-rows: 94px 600px  110px;
+    grid-template-rows: 94px 700px  120px;
     grid-template-areas:
     "caja1  caja1   caja1"
     "caja2  caja3   caja3"
@@ -18,6 +18,7 @@
 }
 .caja1{
     grid-area: caja1;
+    font-size: 30px;
 }
 .caja2{
     grid-area: caja2;
@@ -49,13 +50,13 @@ body{
 }
 .ini_imagen{ 
     width: 100%;
-    width: 270px;
-    height: 270px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
 }
 .nuestro{
     color: orangered;
-    font-size: 25px;
+    font-size: 30px;
 
 }
 /*** HEADER***/
@@ -77,7 +78,7 @@ header{
  
 }
 .menu li{
-display : inline;
+display: inline;
 margin-right: 10px;
 
 }
@@ -93,7 +94,7 @@ margin-right: 10px;
 .contenedor2{
     display: grid;
     grid-template-columns: 500px 1fr;
-    grid-template-rows: 94px 170vh;
+    grid-template-rows: 94px 150vh;
     grid-template-areas:
     "cajas1  cajas1"
     "cajas2  cajas2"
@@ -103,36 +104,42 @@ margin-right: 10px;
 
 .cajas1{
     grid-area: cajas1;
+    background-color: #FBE1BB;
+    font-size: 30px;
 }
 .cajas2{
     grid-area: cajas2;
+    background-color: #FBE1BB;
 }
 .cajas3{
     grid-area: cajas3;
     background-color: orange;
+    font-size: 20px;
     
 }
-.productos{
-    width : 200px;
-    color: white;
-    display: inline-block;
-    margin: 6%;
-    font-size: 15px;
-    border-radius: 10px;
-    background-color: orangered;
+
+
+.cards-wrapperd{
+ display: flex;
+justify-content: center;
+justify-items: center;
+justify-content: space-around;
+border-radius: 20px;
 }
-.productos_imagen{
-    width: 100%;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+.card{
+    margin: 0 .5em;
+    width: calc(100%/5);
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.productos_parrafo{
-    background-color: orangered;
-    border-radius: 10px;
+
+.card-body{
+    background-color: rgb(255, 195, 146);
+    border-radius: 5px;
+   
 }
+
 .titulo{
     color: orangered;
     font-size: 30px;
@@ -140,10 +147,14 @@ margin-right: 10px;
 h3{
     color: rgb(255, 255, 255);
 }
+h2{
+    color: orangered;
+    text-align:center;
+}
 
 
 /*** Animaciones***/
-header{
+.caja1,nav{
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -174,70 +185,22 @@ header{
 .ini_imagen:hover{
     transform: scale(1.1);
 }
-
-.productos{
+.card{
     transition: all 1s;
-    -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-fwd-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
-}
-.productos1{
-    animation-delay: 0.5s;
-}
-.productos2{
-    animation-delay: 0.75s;
-}
-.productos3{
-    animation-delay: 1s;
-}
-.productos4{
-    animation-delay: 1.25s;
-}
-.productos5{
-    animation-delay: 1.50s;
-}
-.productos6{
-    animation-delay: 1.75s;
-}
-@-webkit-keyframes slide-in-fwd-top {
-    0% {
-      -webkit-transform: translateZ(-1400px) translateY(-800px);
-              transform: translateZ(-1400px) translateY(-800px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0) translateY(0);
-              transform: translateZ(0) translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-fwd-top {
-    0% {
-      -webkit-transform: translateZ(-1400px) translateY(-800px);
-              transform: translateZ(-1400px) translateY(-800px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0) translateY(0);
-              transform: translateZ(0) translateY(0);
-      opacity: 1;
-    }
-  }
-.productos:hover{
-    box-shadow: rgb(255, 59, 0) -5px 5px,rgb(255, 59, 0) -10px 10px,rgb(255, 59, 0) -15px 15px;
-
-}
 /*** Media query***/
 
 @media screen and (max-width: 480px){
-    .menu{
-        padding-inline: 10px;
-    }
+
     .contenedor{
         display: flex;
         flex-direction: column;
     }
-    .productos2{
+    .card{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -256,5 +219,3 @@ header{
             width: 30vw;
         }
 }
-
-
