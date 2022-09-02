@@ -18,7 +18,8 @@
 }
 .caja1{
     grid-area: caja1;
-    font-size: 30px;
+    font-size: 20px;
+   
 }
 .caja2{
     grid-area: caja2;
@@ -94,7 +95,7 @@ margin-right: 10px;
 .contenedor2{
     display: grid;
     grid-template-columns: 500px 1fr;
-    grid-template-rows: 94px 150vh;
+    grid-template-rows: 94px 190vh;
     grid-template-areas:
     "cajas1  cajas1"
     "cajas2  cajas2"
@@ -105,7 +106,7 @@ margin-right: 10px;
 .cajas1{
     grid-area: cajas1;
     background-color: #FBE1BB;
-    font-size: 30px;
+    font-size: 20px;
 }
 .cajas2{
     grid-area: cajas2;
