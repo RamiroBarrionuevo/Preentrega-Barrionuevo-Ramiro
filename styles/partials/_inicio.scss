@@ -1,0 +1,36 @@
+body{
+    background-color: #FBE1BB ;
+    .contenedor{
+        display: grid;
+        grid-template-columns: 500px 1fr 1fr;
+        grid-template-rows: 94px 700px  120px;
+        grid-template-areas:
+        "caja1  caja1   caja1"
+        "caja2  caja3   caja3"
+        "caja4  caja4   caja4"
+        ;
+        .caja2{
+            grid-area: caja2;
+            text-align: center;
+        
+            .nuestro{
+                color: orangered;
+                font-size: 30px;
+            
+            }
+            .ini_imagen{ 
+                width: 100%;
+                width: 300px;
+                height: 300px;
+                border-radius: 20px;
+            
+                .ini a{
+                    color: orangered;
+                }}}
+                .caja3{
+                    grid-area: caja3;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                }}
+}

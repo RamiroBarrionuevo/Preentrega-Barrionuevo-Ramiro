@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #FBE1BB;
+}
+body .contenedor {
+  display: grid;
+  grid-template-columns: 500px 1fr 1fr;
+  grid-template-rows: 94px 700px 120px;
+  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4";
+}
+body .contenedor .caja1 {
+  grid-area: caja1;
+  font-size: 20px;
+}
+
+body {
+  background-color: #FBE1BB;
+}
+body .contenedor {
+  display: grid;
+  grid-template-columns: 500px 1fr 1fr;
+  grid-template-rows: 94px 700px 120px;
+  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4";
+}
+body .contenedor .caja2 {
+  grid-area: caja2;
+  text-align: center;
+}
+body .contenedor .caja2 .nuestro {
+  color: orangered;
+  font-size: 30px;
+}
+body .contenedor .caja2 .ini_imagen {
+  width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+body .contenedor .caja2 .ini_imagen .ini a {
+  color: orangered;
+}
+body .contenedor .caja3 {
+  grid-area: caja3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: #FBE1BB;
+}
+body .contenedor {
+  display: grid;
+  grid-template-columns: 500px 1fr 1fr;
+  grid-template-rows: 94px 700px 120px;
+  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4";
+}
+body .contenedor .caja4 {
+  grid-area: caja4;
+  background-color: orange;
+}
+body .contenedor .caja4 .footer {
+  color: beige;
+  font-size: 20px;
+}
+
+body {
+  background-color: #FBE1BB;
+}
+body .contenedor2 {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: 94px 190vh;
+  grid-template-areas: "cajas1  cajas1" "cajas2  cajas2" "cajas3  cajas3";
+}
+body .contenedor2 .cajas1 {
+  grid-area: cajas1;
+  background-color: #FBE1BB;
+  font-size: 20px;
+}
+body .contenedor2 .cajas2 {
+  grid-area: cajas2;
+  background-color: #FBE1BB;
+}
+body .contenedor2 .cajas2 h2 {
+  color: orangered;
+  text-align: center;
+}
+body .contenedor2 .cajas2 .cards-wrapperd {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+body .contenedor2 .cajas2 .cards-wrapperd .card {
+  margin: 0 0.5em;
+  width: 20%;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+body .contenedor2 .cajas2 .cards-wrapperd .card .card-body {
+  background-color: rgb(255, 195, 146);
+  border-radius: 5px;
+}
+body .contenedor2 .cajas3 {
+  grid-area: cajas3;
+  background-color: orange;
+  font-size: 20px;
+}
+body .contenedor2 .cajas3 .footer {
+  color: beige;
+  font-size: 20px;
+}
+body .contenedor2 .cajas3 .footer h3 {
+  color: rgb(255, 255, 255);
+}
+
+.caja1, nav {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.ini_imagen:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  transition: all 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}/*# sourceMappingURL=estilo.css.map */
