@@ -160,4 +160,20 @@ body .contenedor2 .cajas3 .footer h3 {
 .card:hover {
   transform: scale(1.1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media screen and (max-width: 480px) {
+  body .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  body .contenedor2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body .contenedor2 .cajas2 .cards-wrapperd .card {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
 }/*# sourceMappingURL=estilo.css.map */

@@ -1,14 +1,23 @@
 @media screen and ( max-width: 480px) {
-.contenedor2{
-    display: flex;
-    flex-direction: column;
-}
-.card,.card-body{
+body{
+    .contenedor{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        background-color: aqua;
-
+    }
+}
+body{
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+        .cajas2{
+            .cards-wrapperd{
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 500px;
+                }
+            }
+        }
+    }
 }
 }
