@@ -3,14 +3,15 @@ body{
     .contenedor{
         display: grid;
         grid-template-columns: 500px 1fr 1fr;
-        grid-template-rows: 94px 700px  120px;
+        grid-template-rows: 94px 700px  400px 120px;
         grid-template-areas:
         "caja1  caja1   caja1"
         "caja2  caja3   caja3"
         "caja4  caja4   caja4"
+        "caja5  caja5   caja5"
         ;
-        .caja4{
-            grid-area: caja4;
+        .caja5{
+            grid-area: caja5;
             background-color: orange;
             
         

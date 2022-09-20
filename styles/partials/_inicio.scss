@@ -3,11 +3,12 @@ body{
     .contenedor{
         display: grid;
         grid-template-columns: 500px 1fr 1fr;
-        grid-template-rows: 94px 700px  120px;
+        grid-template-rows: 94px 700px  300px 120px;
         grid-template-areas:
         "caja1  caja1   caja1"
         "caja2  caja3   caja3"
         "caja4  caja4   caja4"
+        "caja5  caja5   caja5"
         ;
         .caja2{
             grid-area: caja2;
@@ -27,10 +28,27 @@ body{
                 .ini a{
                     color: orangered;
                 }}}
-                .caja3{
-                    grid-area: caja3;
-                    text-align: center;
-                    display: flex;
-                    align-items: center;
-                }}
+        .caja3{
+                grid-area: caja3;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                }
+        .caja4{
+            grid-area: caja4;
+            text-align: center;
+            align-items: center;
+            .accordion-body{
+                background-color: #FBE1BB;
+                
+                
+            }
+            button{
+                color: white;
+                background-color: orange;
+            }
+            
+        }
+       
+            }
 }

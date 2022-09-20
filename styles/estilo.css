@@ -12,8 +12,8 @@ body {
 body .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
-  grid-template-rows: 94px 700px 120px;
-  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4";
+  grid-template-rows: 94px 700px 120px 1fr;
+  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4" "caja5  caja5   caja5";
 }
 body .contenedor .caja1 {
   grid-area: caja1;
@@ -26,8 +26,8 @@ body {
 body .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
-  grid-template-rows: 94px 700px 120px;
-  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4";
+  grid-template-rows: 94px 700px 300px 120px;
+  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4" "caja5  caja5   caja5";
 }
 body .contenedor .caja2 {
   grid-area: caja2;
@@ -52,6 +52,18 @@ body .contenedor .caja3 {
   display: flex;
   align-items: center;
 }
+body .contenedor .caja4 {
+  grid-area: caja4;
+  text-align: center;
+  align-items: center;
+}
+body .contenedor .caja4 .accordion-body {
+  background-color: #FBE1BB;
+}
+body .contenedor .caja4 button {
+  color: white;
+  background-color: orange;
+}
 
 body {
   background-color: #FBE1BB;
@@ -59,14 +71,14 @@ body {
 body .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
-  grid-template-rows: 94px 700px 120px;
-  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4";
+  grid-template-rows: 94px 700px 400px 120px;
+  grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4" "caja5  caja5   caja5";
 }
-body .contenedor .caja4 {
-  grid-area: caja4;
+body .contenedor .caja5 {
+  grid-area: caja5;
   background-color: orange;
 }
-body .contenedor .caja4 .footer {
+body .contenedor .caja5 .footer {
   color: beige;
   font-size: 20px;
 }
