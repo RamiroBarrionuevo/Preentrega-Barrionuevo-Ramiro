@@ -6,9 +6,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  background-color: #FBE1BB;
-}
 body .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
@@ -20,9 +17,6 @@ body .contenedor .caja1 {
   font-size: 20px;
 }
 
-body {
-  background-image: url(./../../images/vecteezy_cute-funny-cartoon-character-burger-on-background-vector_7168534.jpg);
-}
 body .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
@@ -55,10 +49,11 @@ body .contenedor .caja3 .video {
   margin-top: 20px;
 }
 body .contenedor .caja3 h6 {
-  color: orange;
+  color: orangered;
   text-align: center;
   align-items: center;
   margin-top: 40px;
+  font-size: 20px;
 }
 body .contenedor .caja4 {
   grid-area: caja4;
@@ -73,9 +68,6 @@ body .contenedor .caja4 button {
   background-color: orange;
 }
 
-body {
-  background-color: #FBE1BB;
-}
 body .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
