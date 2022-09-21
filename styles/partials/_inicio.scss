@@ -1,5 +1,5 @@
 body{
-    background-color: #FBE1BB ;
+    background-image: url(./../../images/vecteezy_cute-funny-cartoon-character-burger-on-background-vector_7168534.jpg);
     .contenedor{
         display: grid;
         grid-template-columns: 500px 1fr 1fr;
@@ -30,11 +30,20 @@ body{
                 }}}
         .caja3{
                 grid-area: caja3;
-                text-align: center;
                 display: flex;
-                align-items: center;
+                display: inline-block;
+                .video{
+                    margin-top: 20px;
+                }
+              
                 h6{
-                color: orangered;
+                color: orange;
+                text-align: center;
+                align-items: center;
+                margin-top: 40px;
+                
+                
+                
                 }
                 }
         .caja4{

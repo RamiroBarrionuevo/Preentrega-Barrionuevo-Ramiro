@@ -3,6 +3,12 @@ body{
     .contenedor{
         display: flex;
         flex-direction: column;
+        .caja3{
+            
+            .video{
+                width: 100%;
+            }
+        }
     }
 }
 body{
