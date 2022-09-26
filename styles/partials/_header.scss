@@ -1,5 +1,4 @@
-body{
-    .contenedor{
+.contenedor{
         display: grid;
         grid-template-columns: 500px 1fr 1fr;
         grid-template-rows: 94px 700px  120px 1fr;
@@ -15,4 +14,3 @@ body{
            
         }
     }
-}

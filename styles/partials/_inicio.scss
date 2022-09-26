@@ -1,6 +1,4 @@
-body{
-    
-    .contenedor{
+  .contenedor{
         display: grid;
         grid-template-columns: 500px 1fr 1fr;
         grid-template-rows: 94px 700px  300px 120px;
@@ -13,10 +11,12 @@ body{
         .caja2{
             grid-area: caja2;
             text-align: center;
+            
         
             .nuestro{
-                color: orangered;
+                color: orange;
                 font-size: 30px;
+                text-decoration: none;
             
             }
             .ini_imagen{ 
@@ -24,9 +24,10 @@ body{
                 width: 300px;
                 height: 300px;
                 border-radius: 20px;
+                margin-top: 10px;
             
                 .ini a{
-                    color: orangered;
+                    color: orange;
                 }}}
         .caja3{
                 grid-area: caja3;
@@ -37,7 +38,7 @@ body{
                 }
               
                 h6{
-                color: orangered;
+                color: orange;
                 text-align: center;
                 align-items: center;
                 margin-top: 40px;
@@ -64,4 +65,3 @@ body{
         }
        
             }
-}
