@@ -325,26 +325,25 @@ body {
     padding: 35px 0px;
   }
   .contenedor3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "local1 " "local2 " "local3 " "local4 " "local5 ";
+    display: flex;
+    flex-direction: column;
   }
-  .contenedor3 .local1 {
-    grid-area: local1;
-    font-size: 20px;
-  }
-  .contenedor3 .local2 {
-    grid-area: local2;
+  .contenedor3 .local2 h1 {
+    text-align: center;
   }
   .contenedor3 .local3 {
-    grid-area: local3;
+    flex-direction: column;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
   }
   .contenedor3 .local4 {
-    grid-area: local4;
-  }
-  .contenedor3 .local5 {
-    grid-area: local5;
+    flex-direction: column;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
   }
   .contenedor3 .local5 .pie-pagina .grupo-1 {
     width: 90%;
