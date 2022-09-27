@@ -161,6 +161,7 @@ body {
 .contenedor2 .cajas2 .cards-wrapperd .card .card-body {
   background-color: rgb(255, 195, 146);
   border-radius: 5px;
+  text-align: center;
 }
 .contenedor2 .cajas3 {
   grid-area: cajas3;
