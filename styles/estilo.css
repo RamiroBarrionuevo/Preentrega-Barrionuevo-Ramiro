@@ -253,6 +253,34 @@ body {
   border-radius: 10px;
 }
 
+header {
+  font-size: 20px;
+}
+
+main form {
+  border: 3px solid orange;
+  font-weight: 700;
+  text-align: center;
+  color: orange;
+}
+main h2 {
+  text-align: center;
+  color: orange;
+  margin-top: 20px;
+}
+main fieldset .infocontacto {
+  text-align: center;
+}
+main fieldset .infomensaje {
+  text-align: center;
+}
+main fieldset .buttom {
+  text-align: center;
+}
+main .ubicacion {
+  text-align: center;
+}
+
 .caja1, nav {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -346,6 +374,12 @@ body {
     align-items: center;
   }
   .contenedor3 .local5 .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
