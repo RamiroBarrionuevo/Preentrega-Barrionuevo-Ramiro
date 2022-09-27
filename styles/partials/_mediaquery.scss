@@ -43,5 +43,42 @@
             }
         }
     }
+    .contenedor3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "local1 "
+        "local2 "
+        "local3 "
+        "local4 "
+        "local5 ";
+        .local1{
+            grid-area: local1;
+            font-size: 20px;  
+        }
+        .local2{
+            grid-area: local2;
+        }
+        .local3{
+            grid-area: local3; 
+        }
+        .local4{
+            grid-area: local4;
+        }
+        .local5{
+            grid-area: local5;
+            .pie-pagina{
+                .grupo-1{
+                    width: 90%;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 30px;
+                    padding: 35px 0px;
+                }
+            }
+            
+    
+        }
 
+}
 }

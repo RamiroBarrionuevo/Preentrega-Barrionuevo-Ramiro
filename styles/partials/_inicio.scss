@@ -8,6 +8,10 @@
         "caja4  caja4   caja4"
         "caja5  caja5   caja5"
         ;
+        .caja1{
+            grid-area: caja1;
+            font-size: 20px;
+        }
         .caja2{
             grid-area: caja2;
             text-align: center;
@@ -62,6 +66,9 @@
                 background-color: orange;
             }
             
+        }
+        .caja5{
+            grid-area: caja5;
         }
        
             }
