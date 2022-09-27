@@ -26,7 +26,7 @@ body {
   padding: 45px 0px;
 }
 .pie-pagina .grupo-1 .box h2 {
-  color: black;
+  color: white;
   margin-bottom: 25px;
   font-size: 25px;
   text-align: center;
@@ -279,6 +279,54 @@ main fieldset .buttom {
 }
 main .ubicacion {
   text-align: center;
+}
+
+.recomendaciones {
+  height: 740px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: orange;
+}
+.recomendaciones .recomendacionesdiv {
+  width: 90%;
+  border: solid 2px orange;
+  margin-bottom: 50px;
+}
+.recomendaciones .recomendacionesdiv .recomendacioncontenedorimagen {
+  height: 600px;
+  width: 100%;
+}
+.recomendaciones .recomendacionesdiv .recomendacioncontenedorimagen .recomendacionimagen1, .recomendaciones .recomendacionesdiv .recomendacioncontenedorimagen .recomendacionimagen2, .recomendaciones .recomendacionesdiv .recomendacioncontenedorimagen .recomendacionimagen3 {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recomendacionimagen1 {
+  background-image: url(./../images/Alforno-burger-alta-0440.jpg);
+}
+
+.recomendacionimagen2 {
+  background-image: url(./../images/gente\ comprando.jpg);
+}
+
+.recomendacionimagen3 {
+  background-image: url(./../images/sin\ stock.jpg);
+}
+
+.recomendaciontextoimagen {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.556);
+  color: white;
+  font-size: 24px;
 }
 
 .caja1, nav {
