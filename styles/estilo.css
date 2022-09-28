@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"); /*** GENERAL***/
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +6,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/*** BODY***/
 body {
   background-color: #FBE1BB;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/*** FOOTER***/
 .pie-pagina {
   width: 100%;
   background-color: #fbe1bb;
@@ -43,6 +45,10 @@ body {
   text-align: center;
   align-items: center;
   background-color: white;
+  transition: 300ms ease;
+}
+.pie-pagina .grupo-1 .box p:hover {
+  color: orange;
 }
 .pie-pagina .grupo-1 .red-social {
   text-align: center;
@@ -59,7 +65,7 @@ body {
   transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+  color: orange;
 }
 .pie-pagina .grupo-2 {
   padding: 15px 10px;
@@ -191,10 +197,52 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.contenedor3 .local3 .local__imagen1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 228px;
+  border-radius: 5px;
+}
+.contenedor3 .local3 .local__imagen2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 228px;
+  border-radius: 5px;
+}
+.contenedor3 .local3 .local__imagen3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 228px;
+  border-radius: 5px;
+}
 .contenedor3 .local4 {
   grid-area: local4;
   display: flex;
   justify-content: space-around;
+}
+.contenedor3 .local4 .local__imagen4 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 228px;
+  border-radius: 5px;
+}
+.contenedor3 .local4 .local__imagen5 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 228px;
+  border-radius: 5px;
+}
+.contenedor3 .local4 .local__imagen6 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 228px;
+  border-radius: 5px;
 }
 .contenedor3 .local5 {
   grid-area: local5;
@@ -277,6 +325,11 @@ main fieldset .infomensaje {
 }
 main fieldset .buttom {
   text-align: center;
+  transition: 300ms ease;
+  background-color: white;
+}
+main fieldset .buttom:hover {
+  color: orange;
 }
 main .ubicacion {
   text-align: center;
@@ -330,7 +383,8 @@ main .ubicacion {
   font-size: 24px;
 }
 
-.caja1, nav {
+/*** HEADER***/
+nav {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -355,10 +409,12 @@ main .ubicacion {
     opacity: 1;
   }
 }
+/*** INICIO***/
 .ini_imagen:hover {
   transform: scale(1.1);
 }
 
+/*** CARD /PRODUCTOS***/
 .card {
   transition: all 1s;
 }
@@ -368,8 +424,103 @@ main .ubicacion {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.pie-pagina .grupo-1 .red-social .a:hover {
-  color: aqua;
+/*** GALERIA DE IMAGENES***/
+.local_imagen1 {
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.local_imagen2 {
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.local_imagen3 {
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.local_imagen4 {
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+
+.local_imagen5 {
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.local_imagen6 {
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+.local__imagen1:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
+}
+
+.local__imagen2:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
+}
+
+.local__imagen3:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
+}
+
+.local__imagen4:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
+}
+
+.local__imagen5:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
+}
+
+.local__imagen6:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
 
 @media screen and (max-width: 480px) {

@@ -26,6 +26,11 @@ main{
         }
         .buttom{
             text-align: center;
+            transition: 300ms ease;
+            background-color: white;
+        }
+        .buttom:hover{
+            color: orange;
         }
     }
     .ubicacion{
