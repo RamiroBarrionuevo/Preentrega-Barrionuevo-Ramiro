@@ -72,6 +72,11 @@ body {
   text-align: center;
   color: black;
 }
+.pie-pagina .grupo-2 .ir {
+  color: orange;
+  background-color: white;
+  text-decoration: none;
+}
 
 .contenedor {
   display: grid;
@@ -82,9 +87,6 @@ body {
 .contenedor .caja1 {
   grid-area: caja1;
   font-size: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 .contenedor .caja2 {
   grid-area: caja2;
@@ -171,6 +173,14 @@ body {
   background-color: rgb(255, 195, 146);
   border-radius: 5px;
   text-align: center;
+}
+.contenedor2 .cajas2 .cards-wrapperd .card .card-body .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(245, 159, 89);
+  --bs-btn-border-color: #00000000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(245, 159, 89);
+  --bs-btn-hover-border-color: #00000000;
 }
 .contenedor2 .cajas3 {
   grid-area: cajas3;
@@ -413,6 +423,10 @@ nav {
   }
 }
 /*** INICIO***/
+.ini_imagen {
+  transition: all 1s;
+}
+
 .ini_imagen:hover {
   transform: scale(1.1);
 }

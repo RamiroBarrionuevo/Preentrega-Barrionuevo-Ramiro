@@ -15,6 +15,7 @@
     
         .cajas2{
             grid-area: cajas2;
+            
 
         
             h2{
@@ -37,6 +38,15 @@
                     background-color: rgb(255, 195, 146);
                     border-radius: 5px;
                     text-align: center;
+                    .btn-primary {
+                        --bs-btn-color: #fff;
+                        --bs-btn-bg:  rgb(245, 159, 89);
+                        --bs-btn-border-color: #00000000;
+                        --bs-btn-hover-color: #fff;
+                        --bs-btn-hover-bg: rgb(245, 159, 89);
+                        --bs-btn-hover-border-color: #00000000;
+                        
+                    }
                    
                 }
             }

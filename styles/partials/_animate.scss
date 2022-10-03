@@ -29,6 +29,9 @@ nav{
         }
 }
                               /*** INICIO***/
+.ini_imagen{
+  transition: all 1s;
+}
 .ini_imagen:hover{
     transform: scale(1.1);
 }
