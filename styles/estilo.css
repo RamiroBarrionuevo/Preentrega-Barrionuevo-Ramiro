@@ -82,6 +82,9 @@ body {
 .contenedor .caja1 {
   grid-area: caja1;
   font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .contenedor .caja2 {
   grid-area: caja2;
@@ -136,7 +139,7 @@ body {
 .contenedor2 {
   display: grid;
   grid-template-columns: 500px 1fr;
-  grid-template-rows: 94px 210vh;
+  grid-template-rows: 94px 200vh;
   grid-template-areas: "cajas1  cajas1" "cajas2  cajas2" "cajas3  cajas3";
 }
 .contenedor2 .cajas1 {
@@ -488,37 +491,37 @@ nav {
   }
 }
 .local__imagen1:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s;
   box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
 
 .local__imagen2:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s;
   box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
 
 .local__imagen3:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s;
   box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
 
 .local__imagen4:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s;
   box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
 
 .local__imagen5:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s;
   box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
 
 .local__imagen6:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: all 1s;
   box-shadow: rgb(255, 115, 0) 5px 5px 5px 5px;
 }
