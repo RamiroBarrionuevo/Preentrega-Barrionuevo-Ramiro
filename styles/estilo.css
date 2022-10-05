@@ -81,7 +81,7 @@ body {
 .contenedor {
   display: grid;
   grid-template-columns: 500px 1fr 1fr;
-  grid-template-rows: 94px 700px 300px 120px;
+  grid-template-rows: 94px 700px 400px 120px;
   grid-template-areas: "caja1  caja1   caja1" "caja2  caja3   caja3" "caja4  caja4   caja4" "caja5  caja5   caja5";
 }
 .contenedor .caja1 {
@@ -124,15 +124,88 @@ body {
 }
 .contenedor .caja4 {
   grid-area: caja4;
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor .caja4 .cartas {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.contenedor .caja4 .cartas .cartitas {
+  background-color: transparent;
+  width: 20vw;
+  height: 50vh;
+  perspective: 1000px;
+}
+.contenedor .caja4 .cartas .cartitas .flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.contenedor .caja4 .cartas .cartitas .flip .flip__front, .contenedor .caja4 .cartas .cartitas .flip .flip__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-.contenedor .caja4 .accordion-body {
-  background-color: #FBE1BB;
+.contenedor .caja4 .cartas .cartitas .flip .flip__front h4 {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 0 0 8px 8px;
+  padding: 16px 0;
+  background-color: rgba(255, 136, 0, 0.6862745098);
+  width: 100%;
+  color: #f4f4f4;
 }
-.contenedor .caja4 button {
+.contenedor .caja4 .cartas .cartitas .flip .flip__front img {
+  border-radius: 8px;
+  width: 100%;
+  height: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedor .caja4 .cartas .cartitas .flip .flip__back {
+  display: flex;
+  align-items: center;
+  background-color: rgba(244, 244, 244, 0.7647058824);
   color: white;
-  background-color: orange;
+  transform: rotateY(180deg);
+}
+.contenedor .caja4 .cartas .cartitas .flip .flip__back img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotateY(180deg);
+}
+.contenedor .caja4 .cartas .cartitas .flip .flip__back p {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  border-radius: 8px;
+  padding: 8%;
+  background-color: rgba(54, 54, 54, 0.8509803922);
+  width: 100%;
+  height: 350px;
+  color: #f4f4f4;
+}
+.contenedor .caja4 .cartitas:hover .flip {
+  transform: rotateY(180deg);
 }
 .contenedor .caja5 {
   grid-area: caja5;
@@ -553,6 +626,22 @@ nav {
   }
   .contenedor .caja3 .video {
     width: 100%;
+    margin-bottom: 50px;
+  }
+  .contenedor .caja4 {
+    margin-bottom: 5%;
+    width: 95%;
+  }
+  .contenedor .caja4 .cartas {
+    flex-direction: column;
+  }
+  .contenedor .caja4 .cartas .cartitas {
+    width: 75vw;
+    height: 50vh;
+  }
+  .contenedor .caja4 .cartas .cartitas .flip .flip__back p {
+    width: 75vw;
+    height: 50vh;
   }
   .contenedor2 {
     display: flex;
@@ -561,7 +650,12 @@ nav {
   .contenedor2 .cajas2 .cards-wrapperd .card {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    height: 100%;
+    width: 100%;
+  }
+  .contenedor2 .cajas2 .cards-wrapperd .card .card-body .card-text {
+    height: 100%;
+    width: 25vw;
   }
   .contenedor2 .cajas3 .pie-pagina .grupo-1 {
     width: 90%;

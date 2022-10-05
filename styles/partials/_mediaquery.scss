@@ -16,7 +16,31 @@
             
             .video{
                 width: 100%;
+                margin-bottom: 50px;
             }
+        }
+        .caja4{
+            margin-bottom: 5%;
+            width: 95%;
+            .cartas{
+                flex-direction: column;
+                
+                .cartitas{
+                    width: 75vw;
+                    height: 50vh;
+                    
+                    .flip{
+                        .flip__back{
+                            p{
+                                width: 75vw;
+                                height: 50vh;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
         }
     }
 
@@ -24,11 +48,22 @@
         display: flex;
         flex-direction: column;
         .cajas2{
+            
             .cards-wrapperd{
+                
                 .card{
                     display: flex;
                     flex-direction: column;
-                    width: 500px;
+                    height: 100%;
+                    width: 100%;
+                    .card-body{
+                        .card-text{
+                            height: 100%;
+                            width: 25vw;
+                            
+                        }
+                    }
+                    
                 }
             }
         }
