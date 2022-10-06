@@ -102,7 +102,7 @@ header .navbar-dark {
 .contenedor .caja1 {
   grid-area: caja1;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .contenedor .caja1 .nuestro {
   color: orange;
@@ -124,7 +124,7 @@ header .navbar-dark {
   grid-area: caja2;
   display: flex;
   display: inline-block;
-  margin-top: 130px;
+  margin-top: 110px;
 }
 .contenedor .caja2 .video {
   margin-top: 20px;
@@ -136,6 +136,14 @@ header .navbar-dark {
   margin-top: 40px;
   font-size: 30px;
   font-weight: 800;
+}
+.contenedor .caja2 p {
+  color: orange;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 50px;
 }
 .contenedor .caja3 {
   grid-area: caja3;
@@ -702,6 +710,9 @@ nav {
   }
   .contenedor .caja2 .video {
     width: 100%;
+  }
+  .contenedor .caja2 p {
+    margin-right: 0px;
   }
   .contenedor .caja3 {
     width: 95%;
